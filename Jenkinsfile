@@ -1,7 +1,7 @@
 podTemplate(label: 'label', cloud: 'openshift', serviceAccount: 'kabanero-pipeline', containers: [
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', ttyEnabled: true, command: 'cat',
                       envVars: [ envVar(key: 'TAG', value: 'latest'),
-                                envVar(key: 'IMAGENAME', value: 'appsody-jenkins-test'),
+                                envVar(key: 'IMAGENAME', value: 'appsody-jenkin-test'),
                                envVar(key: 'PROJECT', value: 'kabanero')])
   ]){
     node('label') {
